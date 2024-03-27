@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{%load static%}
+
+{% block title%}
+    About Me
+{% endblock%}
+
+{%block header%}
+    About
+{%endblock%}
+
+{% block body%}
+    <div class="duelContainer">
+        <div class="leftcontainer">
+            <p>
+                I am a third year Computer Science major, currently working towards an Honours Bachelor of Computing at the 
+                University of Guelph. I have studied many topics ranging from memory and microcomputers to systems and database 
+                design. I am well versed in the programming languages C, Python, Java, Javascript, HTML, CSS and Swift. I have 
+                previous work experience at Hoffman La Roche as a Pharma Technical Supply (PTS) and Futureworks summer intern. 
+                In this role I learned to use data visualization tools such as dashboards as well as had the opportunity to use 
+                code to solve a variety of problems in an agile environment. 
+            </p>
+            <p>
+                My academic and job experiences have allowed me to develop valuable skills in collaboration, problem-solving, 
+                and critical thinking. I have been recognized as a clear and concise communicator with the ability to interact 
+                professionally and tactfully with co-workers, supervisors and customers. My hobbies include playing the drum kit, 
+                enjoying various styles of music and creating extracurricular programming projects.
+            </p>
+        </div>
+
+        <div class="rightcontainer">
+            <img src="{% static 'Assets/Images/Me.jpeg' %}" class="meImage">
+        </div>
+    </div>
+
+{%endblock%}
+

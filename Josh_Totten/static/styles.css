@@ -1,0 +1,190 @@
+/*Keyframe*/
+@keyframes texthead{
+    from{color:black;}
+    to{color:white;}
+}
+
+@keyframes imagePopin{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+/*Fontface*/
+@font-face {
+    font-family: 'Baloo';
+    src: url(Assets/Fonts/baloo/Baloo-Regular.ttf);
+}
+@font-face{
+    font-family: 'ostrichsans';
+    src: url(Assets/Fonts/ostrich-sans-master/OstrichSans-Bold.otf)
+}
+@font-face{
+    font-family: 'signika';
+    src: url(Assets/Fonts/Signika/Signika-VariableFont_GRAD\,wght.ttf)
+}
+
+
+/*Elements*/
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    width: 100%;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 600%;
+    text-align: center;
+    font-family: "ostrichsans";
+}
+
+/*Classes*/
+.indexHeader{
+    margin: 0;
+    color: black;
+    font-size: 800%;
+    font-family: "ostrichsans";
+    animation-name: texthead;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end:5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    text-align: center;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.duelContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    color: white;
+    gap: 10%;
+    margin-top: 15%;
+}
+
+.rightcontainer{
+    height: 60%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation-name: imagePopin;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+}
+
+.leftcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: texthead;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    height: 60%;
+    width: 40%;
+}
+
+.meImage{
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+.nav-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-content a{
+    color: white;
+    display: flex;
+    font-family: 'signika';
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    font-size: 50px;
+
+}
+
+.nav-content a:hover{
+    background-color: gray;
+}
+
+.navplusHeader{
+    height: 15%;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background-color: black;
+}
+
+.closebutton{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 60px;
+    color: white;
+    rotate: 90deg;
+}
+
+/*ID*/
+#navbar{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+}

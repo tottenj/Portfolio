@@ -1,0 +1,39 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{%block title%}{%endblock%}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="{% static "Scripts/navbar.js" %}"></script>
+    <meta charset="utf-8">
+    <meta name="author" content="Josh Totten">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="navplusHeader">
+        <nav>
+            <a href="javascript:void(0)" style="rotate: 180deg;" class="closebutton" onclick="opennav()">&#9776;</a>
+            <div id="navbar">
+                <a href="javascript:void(0)" class="closebutton" onclick="closenav()">&#9776;</a>
+                <div class="nav-content">
+                    <a href="{% url 'index' %}">Home</a>
+                    <a href="{% url 'about' %}">About</a>
+                    <a href="{%url 'projects'%}">Projects</a>
+                    <a href="{%url 'contact'%}">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+       
+        <header>
+            <h1>{%block header%}{%endblock%}</h1>
+        </header>
+    </div>
+
+    {%block body%}
+    {%endblock%}
+
+</body>
+<html>
