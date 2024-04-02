@@ -12,7 +12,7 @@
 {% block body%}
     <div class="duelContainer">
         <div class="leftcontainer">
-            <p>
+            <p class="aboutparagraphs">
                 I am a third year Computer Science major, currently working towards an Honours Bachelor of Computing at the 
                 University of Guelph. I have studied many topics ranging from memory and microcomputers to systems and database 
                 design. I am well versed in the programming languages C, Python, Java, Javascript, HTML, CSS and Swift. I have 
@@ -20,7 +20,7 @@
                 In this role I learned to use data visualization tools such as dashboards as well as had the opportunity to use 
                 code to solve a variety of problems in an agile environment. 
             </p>
-            <p>
+            <p class="aboutparagraphs">
                 My academic and job experiences have allowed me to develop valuable skills in collaboration, problem-solving, 
                 and critical thinking. I have been recognized as a clear and concise communicator with the ability to interact 
                 professionally and tactfully with co-workers, supervisors and customers. My hobbies include playing the drum kit, 
@@ -33,5 +33,92 @@
         </div>
     </div>
 
+    <h2>Education</h2>
+    <hr>
+    <div class="duelContainer2">
+        <div class="leftcontainer2">
+            <ul class="edulist">
+                <li><h3>University of Guelph</h3><li>
+                <li>Computer Science</li>
+                <li>Bachelor of Computing - Honours</li>
+                <li>Expected Graduation: 2025</li>
+            <ul>
+        </div>
+        <div class="rightcontainer2">
+            <img class="uogImages" src="{% static 'Assets/Images/uog1.jpeg' %}">
+            <img class="uogImages" src="{% static 'Assets/Images/uog2.jpeg' %}">
+            <img class="uogImages" src="{% static 'Assets/Images/uog3.avif' %}">
+        </div>
+    </div>
+    <h2 style="margin-top:5%">Work</h2>
+    <hr>
+
+    <div class="dueljobContainer">
+        <div class="jobcontainer">
+            <div class="titlecontainer">
+                <div class="titleandlocation">
+                    <h3 class="title">Teaching Assistant</h3>
+                    <h4>University of Guelph</h4>
+                </div>
+                <h3 class="dates">January 2025 - May 2025</h3>
+            </div>
+            <ul class="joblist">
+                <li>Facilitate office hours for student’s questions and concerns throughout each week</li>
+                <li>Mark students assignments throughout the semester</li>
+                <li>Respond to student questions posted on class discussion forum</li>
+            </ul>
+        </div>
+        <div class="jobimage">
+            <img class="logo" src="{% static "Assets/Images/uoglogo.png" %}">
+        </div>
+    </div>
+
+
+        <div class="dueljobContainer">
+            <div class="jobcontainer">
+                <div class="titlecontainer">
+                    <div class="titleandlocation">
+                        <h3 class="title">Computer Literacy Instructor</h3>
+                        <h4>Polycultural Community and Immigrant Services</h4>
+                    </div>
+                    <h3 class="dates">July 2023 - August 2023</h3>
+                </div>
+                <ul class="joblist">
+                    <li>Created and taught a 6 week computing curriculum beginning with basic knowledge and culminating in advanced topics</li>
+                    <li>Advertised and marketed computing course to both internal and external clients</li>
+                    <li>Learned to work through language barriers to deliver clear and concise lessons</li>
+                    <li>Gauged class engagement through various forms of feedback</li>
+                </ul>
+            </div>
+            <div class="jobimage">
+                <img style="height:60%" class="logo" src="{% static "Assets/Images/polylogo.png" %}">
+            </div>
+        </div>
+
+
+        <div class="dueljobContainer">
+            <div class="jobcontainer">
+                <div class="titlecontainer">
+                    <div class="titleandlocation">
+                        <h3 class="title">Pharma Technical Supply (PTS) and Futureworks Intern</h3>
+                        <h4>Hoffman La Roche</h4>
+                    </div>
+                    <h3 class="dates">May 2022 - August 2022</h3>
+                </div>
+                <ul class="joblist">
+                    <li>Assisted supply chain team with analyzing data and refreshing dashboards</li>
+                    <li>Completed many projects involving python and HTML code such as manipulating large amounts</li>
+                    of spreadsheet data and building an interactive website powered by HTML and JavaScript
+                    <li>Worked with google app scripts in order to solve and debug company and customer issues</li>
+                    <li>Gained experience working on projects across many different departments</li>
+                </ul>
+            </div>
+            <div class="jobimage">
+                <img class="logo" src="{% static "Assets/Images/rochelogo.png" %}">
+            </div>
+        </div>
+
 {%endblock%}
+
+
 

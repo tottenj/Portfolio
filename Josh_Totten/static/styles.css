@@ -23,6 +23,15 @@
     src: url(Assets/Fonts/Signika/Signika-VariableFont_GRAD\,wght.ttf)
 }
 
+@font-face{
+    font-family: 'poppins-black';
+    src: url(Assets/Fonts/Poppins/Poppins-Black.ttf)
+}
+@font-face{
+    font-family: 'poppins-reg';
+    src: url(Assets/Fonts/Poppins/Poppins-Regular.ttf)
+}
+
 
 /*Elements*/
 html{
@@ -36,6 +45,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: black;
+    overflow-x: hidden;
 }
 
 a{
@@ -58,6 +68,36 @@ header h1{
     font-size: 600%;
     text-align: center;
     font-family: "ostrichsans";
+}
+
+h2{
+    font-size: 500%;
+    padding-left: 2%;
+    font-family: "ostrichsans";
+    color: white;
+    padding-bottom: 0;
+    margin: 0;
+}
+h3{
+    font-family: 'poppins-black';
+    color: white;
+
+}
+h4{
+    font-family: 'poppins-reg';
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    background-color: gray;
 }
 
 /*Classes*/
@@ -89,15 +129,14 @@ header h1{
 .duelContainer{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 80%;
     justify-content: center;
-    color: white;
     gap: 10%;
     margin-top: 15%;
 }
 
 .rightcontainer{
-    height: 60%;
+    height: 70%;
     width: 40%;
     display: flex;
     justify-content: center;
@@ -118,8 +157,28 @@ header h1{
     animation-name: texthead;
     animation-fill-mode: forwards;
     animation-duration: 2s;
-    height: 60%;
+    height: 70%;
     width: 40%;
+}
+
+.leftcontainer2{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+.rightcontainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    row-gap: 3%;
+}
+
+.duelContainer2{
+    display: flex;
+    width: 100%;
+    height: 30%;
 }
 
 .meImage{
@@ -142,7 +201,7 @@ header h1{
 .nav-content a{
     color: white;
     display: flex;
-    font-family: 'signika';
+    font-family: 'poppins-black';
     text-decoration: none;
     justify-content: center;
     align-items: center;
@@ -174,6 +233,95 @@ header h1{
     font-size: 60px;
     color: white;
     rotate: 90deg;
+}
+
+
+.aboutparagraphs{
+    font-family: 'poppins-reg';
+    
+}
+
+.edulist{
+    color: white;
+    list-style: none;
+    font-family: 'poppins-reg';
+    text-align: center;
+}
+
+.uogImages{
+    width: 25%;
+    height: 70%;
+}
+
+.dueljobContainer{
+    display: flex;
+    width: 100%;
+    height: 30%;
+}
+
+.jobcontainer{
+    padding-left: 1%;
+    width: 60%;
+    height: 100%;
+    text-align: left;
+}
+
+.jobimage{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.dates{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 0;
+}
+
+.titlecontainer{
+    display: flex;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: white;
+    width: 100%;
+}
+
+.titleandlocation{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.joblist{
+    color: white;
+    font-family: 'poppins-reg';
+}
+
+.logo{
+    text-align: center;
+    height: 50%;
+    justify-content: center;
+   
+}
+
+.footerlinks{
+    color: black;
+    font-family: 'poppins-black';
+    text-decoration: underline;
+    padding-left: 2%;
+    padding-right: 2%;
+    opacity: 1;
 }
 
 /*ID*/
